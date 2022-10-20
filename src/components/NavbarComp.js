@@ -10,7 +10,7 @@ const NavbarComp = () => {
     <div className='container'>
     <Navbar bg="white" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="/">Bootstrap Project</Navbar.Brand>
+        <Navbar.Brand href="/">Trending News</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -19,8 +19,11 @@ const NavbarComp = () => {
             navbarScroll
           >
             <Link to="/" className='nav-link active'>Home</Link>
-            <Link to="/about" className='nav-link active'>About</Link>
-            <Link to="/contact" className='nav-link active'>Contact</Link>
+            <Link to="/politics" className='nav-link active'>Politics</Link>
+            <Link to="/finance" className='nav-link active'>Finance</Link>
+            <Link to="/science" className='nav-link active'>Science</Link>
+            <Link to="/sports" className='nav-link active'>Sports</Link>
+            <Link to="/travel" className='nav-link active'>Travel</Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

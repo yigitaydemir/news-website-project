@@ -1,7 +1,10 @@
 import Carousel from 'react-bootstrap/Carousel';
-import slider1 from "../media/slider1.jpg"
-import slider2 from "../media/slider2.webp"
-import slider3 from "../media/slider3.webp"
+import { Link } from 'react-router-dom';
+import Politics from "../media/politics.jpg"
+import Finance from "../media/finance.jpg"
+import Science from "../media/science.jpg"
+import Sports from "../media/sports.jpg"
+import Travel from "../media/travel.jpg"
 
 function Slider() {
   return (
@@ -9,38 +12,65 @@ function Slider() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={slider1}
+          src={Politics}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h3>Trending News on Politics</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <Link to="/politics" className='nav-link'>Read More</Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={slider2}
+          src={Finance}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>Trending News on Finance</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <Link to="/politics" className='nav-link'>Read More</Link>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={Science}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>Trending News on Science</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <Link to="/politics" className='nav-link'>Read More</Link>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={Sports}
           alt="Second slide"
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
+          <h3>Trending News on Sports</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <Link to="/politics" className='nav-link'>Read More</Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={slider3}
+          src={Travel}
           alt="Third slide"
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Trending News on Travel</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
+          <Link to="/politics" className='nav-link'>Read More</Link>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
