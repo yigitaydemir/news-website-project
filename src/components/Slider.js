@@ -18,7 +18,7 @@ function Slider() {
         <Carousel.Caption>
           <h3>Trending News on Politics</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <Link to="/politics" className='nav-link'>Read More</Link>
+          <Link to="/politics" className='btn btn-outline-light'>Read More</Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -30,7 +30,7 @@ function Slider() {
         <Carousel.Caption>
           <h3>Trending News on Finance</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <Link to="/politics" className='nav-link'>Read More</Link>
+          <Link to="/politics" className='btn btn-outline-light'>Read More</Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -42,7 +42,7 @@ function Slider() {
         <Carousel.Caption>
           <h3>Trending News on Science</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <Link to="/politics" className='nav-link'>Read More</Link>
+          <Link to="/politics" className='btn btn-outline-light'>Read More</Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -55,7 +55,7 @@ function Slider() {
         <Carousel.Caption>
           <h3>Trending News on Sports</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Link to="/politics" className='nav-link'>Read More</Link>
+          <Link to="/politics" className='btn btn-outline-light'>Read More</Link>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -70,7 +70,7 @@ function Slider() {
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
-          <Link to="/politics" className='nav-link'>Read More</Link>
+          <Link to="/politics" className='btn btn-outline-light'>Read More</Link>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

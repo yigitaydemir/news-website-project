@@ -1,33 +1,57 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Slider from "./Slider";
+import img1 from "../media/finance.jpg";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+//087781f19f024da6905338fe788c6adc
 
 const Home = () => {
+  useEffect(() => {
+    //    fetchNews();
+  }, []);
+
+  const [news, setNews] = useState([]);
+
+  //  const fetchNews = async () => {
+  //    const data = await fetch(
+  //      "https://newsapi.org/v2/top-headlines?country=us&apiKey=087781f19f024da6905338fe788c6adc"
+  //    );
+  //    const news = await data.json();
+  //    console.log(news.articles);
+  //    setNews(news.articles);
+  //  };
+
   return (
     <div className="container">
       <Slider className="shadow"></Slider>
-      {/* <div className="card mt-4">
-        <div className="card-body">
-          <h2>Home Page</h2>
-        </div>
-      </div> */}
 
       <section className="section">
         <div className="container">
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <h3 className="main-heading">Our Company</h3>
-              <div className="underline mx-auto"></div>
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
-              </p>
-              <Link to="/about" className="btn btn-warning shadow">Read More</Link>
+          <div className="card mt-4">
+            <div className="card-body">
+              <div className="card-body">
+                <h2>Home Page</h2>
+              </div>
+
+              <div
+                className="container"
+                style={{ display: "flex", flexWrap: "wrap" }}
+              >
+                {/* {news.map((news) => (
+                  <Card style={{ width: "18rem", margin: "5px" }}>
+                  <Card.Img variant="top" src={news.urlToImage} style={{ height: "180px" }}/>
+                  <Card.Body>
+                    <Card.Title>{news.title}</Card.Title>
+                    <Card.Text>
+                      {news.description}
+                    </Card.Text>
+                    <Button variant="primary"><a href={news.url} target="blank" className="nav-link" style={{ alignSelf: "flex-end" }}>Read More</a></Button>
+                  </Card.Body>
+                </Card>
+                ))} */}
+                
+              </div>
             </div>
           </div>
         </div>
