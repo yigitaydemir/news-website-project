@@ -1,15 +1,46 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import News from "./News";
 
 const Technology = () => {
-  return (
-    <div className='container'>
-    <div className='card mt-4'>
-        <div className='card-body'>
-            <h2>Technology News</h2>
-        </div>
-    </div>
-</div>
-  )
-}
+  useEffect(() => {
+    fetchNews();
+  }, []);
 
-export default Technology
+  const [news, setNews] = useState([]);
+
+  const fetchNews = async () => {
+    const data = await fetch(
+      "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=087781f19f024da6905338fe788c6adc"
+    );
+
+    const news = await data.json();
+    console.log(news.articles);
+    setNews(news.articles);
+  };
+
+  return (
+    <div className="container">
+      <div className="card mt-4">
+        <div className="card-body">
+          <h2>Technology News</h2>
+        </div>
+
+        <div
+          className="container"
+          style={{ display: "flex", flexWrap: "wrap" }}
+        >
+          {news.map((news) => (
+            <News
+              img={news.urlToImage}
+              title={news.title}
+              desc={news.description}
+              url={news.url}
+            ></News>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Technology;

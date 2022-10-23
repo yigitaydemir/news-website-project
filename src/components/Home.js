@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import Slider from "./Slider";
-import img1 from "../media/finance.jpg";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import News from "./News";
 //087781f19f024da6905338fe788c6adc
 
 const Home = () => {
   useEffect(() => {
-    //fetchNews();
+    fetchNews();
   }, []);
 
   const [news, setNews] = useState([]);
