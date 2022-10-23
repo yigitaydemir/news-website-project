@@ -5,7 +5,7 @@ const Science = () => {
     <div className='container'>
     <div className='card mt-4'>
         <div className='card-body'>
-            <h2>Science Page</h2>
+            <h2>Science News</h2>
         </div>
     </div>
 </div>

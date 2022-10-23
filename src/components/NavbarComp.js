@@ -19,11 +19,11 @@ const NavbarComp = () => {
             navbarScroll
           >
             <Link to="/" className='nav-link active'>Home</Link>
-            <Link to="/politics" className='nav-link active'>Politics</Link>
-            <Link to="/finance" className='nav-link active'>Finance</Link>
+            <Link to="/business" className='nav-link active'>Business</Link>
+            <Link to="/entertainment" className='nav-link active'>Entertainment</Link>
             <Link to="/science" className='nav-link active'>Science</Link>
             <Link to="/sports" className='nav-link active'>Sports</Link>
-            <Link to="/travel" className='nav-link active'>Travel</Link>
+            <Link to="/technology" className='nav-link active'>Technology</Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

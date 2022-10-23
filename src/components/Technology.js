@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Politics = () => {
+const Technology = () => {
   return (
     <div className='container'>
     <div className='card mt-4'>
         <div className='card-body'>
-            <h2>Politics Page</h2>
+            <h2>Technology News</h2>
         </div>
     </div>
 </div>
   )
 }
 
-export default Politics
+export default Technology

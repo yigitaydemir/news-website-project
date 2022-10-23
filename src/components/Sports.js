@@ -5,7 +5,7 @@ const Sports = () => {
     <div className='container'>
     <div className='card mt-4'>
         <div className='card-body'>
-            <h2>Sports Page</h2>
+            <h2>Sports News</h2>
         </div>
     </div>
 </div>
