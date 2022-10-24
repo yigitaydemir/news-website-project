@@ -7,6 +7,7 @@ import Entertainment from "./components/Entertainment"
 import Science from "./components/Science"
 import Sports from "./components/Sports"
 import Technology from "./components/Technology"
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/sports" element={<Sports />}></Route>
         <Route path="/technology" element={<Technology />}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

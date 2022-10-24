@@ -5,7 +5,7 @@ import News from "./News";
 
 const Home = () => {
   useEffect(() => {
-    fetchNews();
+    //fetchNews();
   }, []);
 
   const [news, setNews] = useState([]);
