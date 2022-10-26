@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Slider from "./Slider";
 import News from "./News";
-//087781f19f024da6905338fe788c6adc
 
 const Home = () => {
   useEffect(() => {
@@ -12,7 +11,7 @@ const Home = () => {
 
   const fetchNews = async () => {
     const data = await fetch(
-      "https://newsapi.org/v2/top-headlines?country=us&apiKey=087781f19f024da6905338fe788c6adc"
+      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_API_KEY}`
     );
     const news = await data.json();
     console.log(news.articles);
