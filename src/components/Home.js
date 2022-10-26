@@ -52,6 +52,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-ananı sikeyim senin vscode gibi
