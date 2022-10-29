@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.marquee {
+    background-color: #111;
+    color: #eee;
+    /* width: 98%; */
+    width: 80vw;
+    margin: auto;
+    height: 40px;
+    overflow: hidden;
+}
+
+.marquee-content {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling 10s linear infinite;
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(80vw); }
+    100% { transform: translateX(-180vw); }
+}
+
+.marquee-content li {
+    /* width: 19.6%; */
+    width: 20vw;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    white-space: nowrap;
+}

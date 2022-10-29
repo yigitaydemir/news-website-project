@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./components/Home";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 import Business from "./components/Business";
 import Entertainment from "./components/Entertainment";
 import Science from "./components/Science";
@@ -12,7 +12,7 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Link } from "react-router-dom";
+import Scroll from "./components/Scroll";
 
 function App() {
   return (
@@ -59,14 +59,16 @@ function App() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
+
+        <Scroll></Scroll>
       </div>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        {/* <Route path="/" element={<Home />}></Route>
         <Route path="/business" element={<Business />}></Route>
         <Route path="/entertainment" element={<Entertainment />}></Route>
         <Route path="/science" element={<Science />}></Route>
         <Route path="/sports" element={<Sports />}></Route>
-        <Route path="/technology" element={<Technology />}></Route>
+        <Route path="/technology" element={<Technology />}></Route> */}
       </Routes>
       <Footer></Footer>
     </div>
