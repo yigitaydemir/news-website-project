@@ -9,11 +9,12 @@
 .marquee {
     background-color: #111;
     color: #eee;
-    /* width: 98%; */
-    width: 80vw;
+    width: 100;
+    /* width: 80vw; */
     margin: auto;
     height: 40px;
     overflow: hidden;
+    margin-bottom: .5rem;
 }
 
 .marquee-content {
@@ -24,17 +25,24 @@
 }
 
 @keyframes scrolling {
-    0% { transform: translateX(80vw); }
-    100% { transform: translateX(-180vw); }
+    0% { transform: translateX(0); } /* same as the marquee with */
+    100% { transform: translateX(-180vw); } /* li width times number of li content*/
 }
 
 .marquee-content li {
     /* width: 19.6%; */
-    width: 20vw;
+    /* border: 3px solid tomato; */
+    width: 10vw;
     flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+    .marquee-content li {
+        font-size: 1.5rem;
+    }
 }

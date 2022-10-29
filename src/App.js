@@ -63,12 +63,12 @@ function App() {
         <Scroll></Scroll>
       </div>
       <Routes>
-        {/* <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Home />}></Route>
         <Route path="/business" element={<Business />}></Route>
         <Route path="/entertainment" element={<Entertainment />}></Route>
         <Route path="/science" element={<Science />}></Route>
         <Route path="/sports" element={<Sports />}></Route>
-        <Route path="/technology" element={<Technology />}></Route> */}
+        <Route path="/technology" element={<Technology />}></Route>
       </Routes>
       <Footer></Footer>
     </div>
