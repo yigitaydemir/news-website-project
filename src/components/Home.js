@@ -14,7 +14,6 @@ const Home = () => {
       `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_API_KEY}`
     );
     const news = await data.json();
-    console.log(news.articles);
     setNews(news.articles);
   };
 
