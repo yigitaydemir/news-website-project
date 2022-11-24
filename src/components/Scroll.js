@@ -3,28 +3,18 @@ import "../scroll.css";
 
 const Scroll = () => {
   useEffect(() => {
-    //console.log(rates);
-  }, []);
-
-  const [rates, setRates] = useState({});
-
-  const myHeaders = new Headers();
-  myHeaders.append("apikey", "hsZE1DZXZYucq5xvmC5uM6Tqz0B1NU6K");
+    getRates()
+  }, [])
   
-  const requestOptions = {
-    method: "GET",
-    redirect: "follow",
-    headers: myHeaders,
-  };
+  const [rates, setRates] = useState()
 
-  fetch(
-    "https://api.apilayer.com/exchangerates_data/latest?symbols=AED,AUD,CAD,CHF,CNY,EUR,GBP,JPY,TRY&base=USD",
-    requestOptions
-  )
-    .then((response) => response.text())
-    //.then((result) => setRates(result))
-    .then((result) => console.log(result))
-    .catch((error) => console.log("error", error));
+  const getRates = async () => {
+    let response = await fetch("https://api.exchangerate.host/latest?base=USD")
+    response = response.json()
+    //console.log(response)
+    setRates(response.rates)
+    console.log(rates)
+  }
 
   return (
     <div className="marquee">
